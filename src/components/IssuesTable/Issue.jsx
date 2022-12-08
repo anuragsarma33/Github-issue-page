@@ -18,7 +18,7 @@ const Issue = ({
   return (
     <div className="issue-wrapper">
       <div className="issue-anchor-title-wrapper">
-        <IssuesOpenSVG />
+        <IssuesOpenSVG showGreen />
         <a
           target="_blank"
           rel="noopener noreferrer"

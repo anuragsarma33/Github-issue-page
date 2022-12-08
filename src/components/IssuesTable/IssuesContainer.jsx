@@ -9,7 +9,6 @@ const IssuesContainer = ({ query }) => {
   const { loading, issues, hasMore } = useFetchIssues(query, currentPage);
 
   const loadMoreIssues = () => {
-    console.log({ hasMore, issues });
     setCurrentPage(currentPage + 1);
   };
 

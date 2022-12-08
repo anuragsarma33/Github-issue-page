@@ -16,13 +16,13 @@ const IssuesHeader = () => {
       <div className="p-l-1 d-flex align-items-center justify-content-space-between">
         <div className="open-closed-issue-anchor d-flex align-items-center m-l-1">
           <IssuesOpenSVG />
-          253 Open
-          <div className="open-closed-issue-anchor m-l-1">
+          <span className="p-l-5px">253 Open</span>
+          <div className="open-closed-issue-anchor m-l-1 m-b-2px">
             <CheckmarkSVG /> 11,003 Closed
           </div>
         </div>
 
-        <div className="other-details">
+        <div className="other-details m-b-2px">
           {otherValues.map((value, idx) => (
             <span className="details-reset" key={idx}>
               {value} <span className="caret" />

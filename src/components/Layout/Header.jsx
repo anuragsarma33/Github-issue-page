@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { Button } from "react-bootstrap";
 import React from "react";
 import Badge from "react-bootstrap/Badge";
@@ -6,6 +7,13 @@ import StarSVG from "../../utilities/svg/StarSVG";
 import WatchSVG from "../../utilities/svg/WatchSVG";
 import CodeSVG from "../../utilities/svg/CodeSVG";
 import IssuesOpenSVG from "../../utilities/svg/IssuesOpenSVG";
+import PullRequestSVG from "../../utilities/svg/PullRequestSVG";
+import ActionSVG from "../../utilities/svg/ActionSVG";
+import ProjectSVG from "../../utilities/svg/ProjectSVG";
+import WikiSVG from "../../utilities/svg/WikiSVG";
+import SecuritySVG from "../../utilities/svg/SecuritySVG";
+import InsightsSVG from "../../utilities/svg/InsightsSVG";
+import SettingsSVG from "../../utilities/svg/SettingsSVG";
 
 const Header = () => {
   return (
@@ -82,13 +90,37 @@ const Header = () => {
           </Button>
         </div>
       </div>
-      <div className="d-flex gap-10 m-b-1 p-b-1 m-l-1">
-        <span className="d-flex align-items-baseline">
+      <div className="d-flex gap-25 m-b-1 m-l-1">
+        <a className="d-flex item align-items-baseline pointer">
           <CodeSVG /> Code
-        </span>
-        <span className="d-flex align-items-center">
+        </a>
+        <a className="d-flex align-items-center pointer item item-selected gap-5px">
           <IssuesOpenSVG /> Issues
-        </span>
+        </a>
+        <a className="pointer item d-flex align-items-center gap-5px">
+          <PullRequestSVG /> Pull requests{" "}
+          <Badge className="badge-bg-color" bg="secondarys" text="dark">
+            242
+          </Badge>
+        </a>
+        <a className="pointer item d-flex align-items-center gap-5px">
+          <ActionSVG /> Actions
+        </a>
+        <a className="pointer item d-flex align-items-center gap-5px">
+          <ProjectSVG /> Projects
+        </a>
+        <a className="pointer item d-flex align-items-center gap-5px">
+          <WikiSVG /> Wiki
+        </a>
+        <a className="pointer item d-flex align-items-center gap-5px">
+          <SecuritySVG /> Security
+        </a>
+        <a className="pointer item d-flex align-items-center gap-5px">
+          <InsightsSVG /> Insights
+        </a>
+        <a className="pointer item d-flex align-items-center gap-5px">
+          <SettingsSVG /> Settings
+        </a>
       </div>
     </div>
   );

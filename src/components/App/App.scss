@@ -153,7 +153,7 @@ body {
   border-top: 3px solid transparent;
   float: left;
   font-weight: bold;
-  padding: 13px 0px;
+  padding: 5px 0px;
   white-space: nowrap;
   cursor: pointer;
   text-decoration: none;
@@ -266,6 +266,24 @@ body {
   border-bottom-right-radius: 0.375rem !important;
 }
 
+.item {
+  text-decoration: none;
+  color: #57606a;
+  font-weight: 600;
+  padding-bottom: 5px;
+  line-height: 35px;
+}
+
+.item-selected {
+  border-radius: 1px;
+  border-bottom: 2px solid #fd8c73;
+  color: #24292f;
+}
+
+.issue-opened {
+  fill: #1a7f37;
+}
+
 //utility classes
 .m-l-1 {
   margin-left: 1rem;
@@ -281,8 +299,12 @@ body {
 .justify-content-space-between {
   justify-content: space-between;
 }
-.gap-10 {
-  gap: 10px;
+.gap-25 {
+  gap: 25px;
+}
+
+.gap-5px {
+  gap: 5px;
 }
 
 .w-100 {
@@ -295,13 +317,20 @@ body {
 .p-l-2 {
   padding-left: 2rem !important;
 }
+.p-l-5px {
+  padding-left: 5px;
+}
 
 .m-b-1 {
   margin-bottom: 1rem;
 }
 
-.p-b-1 {
-  padding-bottom: 1rem;
+.m-b-2px {
+  margin-bottom: 2px;
+}
+
+.m-t-4px {
+  margin-top: 4px;
 }
 
 @media (max-width: 768px) {
@@ -338,4 +367,8 @@ body {
 
 .color-dark {
   color: #24292f !important;
+}
+
+.pointer {
+  cursor: pointer;
 }

@@ -24,7 +24,7 @@ const SubNav = ({ query, getQuery }) => {
         <div className="d-flex">
           <div className="filters-container">
             Filters
-            <span className="caret" />
+            <span className="caret p-l-5px" />
           </div>
           <div className="search-container">
             <form className="w-100" onSubmit={(e) => e.preventDefault()}>

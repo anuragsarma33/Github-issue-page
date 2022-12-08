@@ -1,19 +1,19 @@
 import React from "react";
 
-const IssuesOpenSVG = () => (
+const IssuesOpenSVG = ({ showGreen }) => (
   <svg
-    style={{ position: "relative", marginRight: "7px" }}
+    className={showGreen ? "issue-opened" : ""}
+    viewBox="0 0 16 16"
+    version="1.1"
     width="16"
     height="16"
     aria-hidden="true"
   >
+    <path d="M8 9.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path>
     <path
-      d="M7 2.3c3.14 0 5.7 2.56 5.7
-  5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3
-  8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14
-  0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1
-  3H6v5h2V4zm0 6H6v2h2v-2z"
-    />
+      fillRule="evenodd"
+      d="M8 0a8 8 0 100 16A8 8 0 008 0zM1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"
+    ></path>
   </svg>
 );
 
