@@ -90,7 +90,7 @@ const Header = () => {
           </Button>
         </div>
       </div>
-      <div className="d-flex gap-25 m-b-1 m-l-1">
+      <div className="d-flex-lg gap-25 m-b-1 m-l-1 d-none-sm">
         <a className="d-flex item align-items-baseline pointer">
           <CodeSVG /> Code
         </a>

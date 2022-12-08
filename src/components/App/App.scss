@@ -41,6 +41,9 @@ body {
     margin-top: 10px;
     width: 300px;
   }
+  @media (max-width: 420px) {
+    width: 265px;
+  }
 }
 .filter-search-container {
   display: flex;
@@ -68,7 +71,7 @@ body {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
   color: #444d56;
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
     height: 38px;
     margin-top: 10px;
   }
@@ -169,6 +172,7 @@ body {
 
   @media (max-width: 820px) {
     flex-direction: column;
+    display: none;
   }
   .details-reset {
     padding-left: 15px;
